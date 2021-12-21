@@ -51,5 +51,15 @@ describe('Converter', () => {
       fetch.mockResponseOnce(JSON.stringify(response))
       return expect(c.convert('usd', 'eur', 1)).resolves.toBe(rate)
     })
+
+    it('returns the correct amounts for various queries', () => {
+      const scenarios = require('./fixtures/valid-tests.json')
+      scenarios.forEach(async data => {
+        const { from, to, amount, apiResponse, result } = data
+        fetch.mockResponseOnce(JSON.stringify(apiResponse))
+        const actualResult = await c.convert(from, to, amount)
+        expect(actualResult).toBe(result)
+      })
+    });
   })
 })

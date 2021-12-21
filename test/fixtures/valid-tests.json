@@ -1,0 +1,38 @@
+[
+  {
+    "from": "usd",
+    "to": "eur",
+    "amount": 1,
+    "apiResponse": {
+      "USD_EUR": 0.89
+    },
+    "result": 0.89
+  },
+  {
+    "from": "usd",
+    "to": "eur",
+    "amount": 10,
+    "apiResponse": {
+      "USD_EUR": 0.89
+    },
+    "result": 8.9
+  },
+  {
+    "from": "eur",
+    "to": "cad",
+    "amount": 123.57,
+    "apiResponse": {
+      "EUR_CAD": 1.46
+    },
+    "result": 180.41
+  },
+  {
+    "from": "dkk",
+    "to": "zwd",
+    "amount": 98752.97,
+    "apiResponse": {
+      "DKK_ZWD": 54.84
+    },
+    "result": 5415612.87
+  }
+]

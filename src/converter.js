@@ -8,7 +8,8 @@ const convert = async (from, to, amount) => {
   const url = `${BASE_URL}&q=${currenciesKey}&apiKey=${apiKey}`
   const res = await fetch(url)
   const data = await res.json()
-  return data[currenciesKey]
+  const baseAmount = data[currenciesKey]
+  return parseFloat((baseAmount * amount).toFixed(2))
 }
 
 export default class Converter {
