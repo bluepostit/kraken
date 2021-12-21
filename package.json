@@ -4,7 +4,8 @@
   "description": "CLI currency converter",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "currency",
@@ -12,5 +13,12 @@
     "converter"
   ],
   "author": "bluepostit",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "core-js": "^3.20.0",
+    "jest": "^27.4.5",
+    "microbundle": "^0.14.2",
+    "prettier": "^2.5.1"
+  }
 }
