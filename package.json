@@ -1,0 +1,16 @@
+{
+  "name": "kraken",
+  "version": "1.0.0",
+  "description": "CLI currency converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "currency",
+    "convert",
+    "converter"
+  ],
+  "author": "bluepostit",
+  "license": "ISC"
+}
