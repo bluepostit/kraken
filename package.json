@@ -27,9 +27,14 @@
   "keywords": [
     "currency",
     "convert",
-    "converter"
+    "converter",
+    "money"
   ],
   "author": "bluepostit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluepostit/kraken.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
