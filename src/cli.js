@@ -40,7 +40,7 @@ export default async function cli(args) {
     const { from, amount, to } = getArgs(args)
     c = new Converter()
     const result = await c.convert(from, to, amount)
-    console.log(result)
+    console.log(`    ${amount} ${from.toUpperCase()} => ${result} ${to.toUpperCase()}`)
   } catch (e) {
     console.log(e)
     showHelp()
