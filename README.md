@@ -7,6 +7,7 @@ A command-line app to convert between two currencies with a simple syntax.
 npm install -g @bluepostit/kraken
 ```
 
+## API Key
 * Kraken uses [Currency Converter API](https://www.currencyconverterapi.com/) as its data source.
 * Sign up [here](https://free.currencyconverterapi.com/free-api-key) for a free key, providing an email address you have access to.
 * You should receive an actvation email. Click the link in the email to activate your key.
@@ -43,3 +44,7 @@ $ kraken nok 156.28 cad
 
     156.28 NOK => 22.67 CAD
 ```
+
+## Accuracy and Limitations
+* [Currency Converter API](https://www.currencyconverterapi.com/)'s free API service, which Kraken uses, is updated once per hour, according to [their website](https://free.currencyconverterapi.com/). This means that the data that Kraken provides does **not reflect live market rates**.
+* Currency Converter API's free API service is restricted to **100 API calls per hour**. If you use Kraken more than 100 times per hour, you risk having your API key banned by Currency Converter.
