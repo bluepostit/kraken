@@ -1,6 +1,6 @@
 {
   "name": "@bluepostit/kraken",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI currency converter",
   "main": "./dist/index.js",
   "source": "./src/cli.js",
