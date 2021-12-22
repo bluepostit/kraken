@@ -1,4 +1,5 @@
 import { env } from 'process'
+import fetch from 'node-fetch'
 
 const BASE_URL = 'https://free.currconv.com/api/v7/convert?compact=ultra'
 
